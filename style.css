@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    --white: #ffffff;
+    --green-dark: #015f43;
+    --green-light: #00b37e;
+    --green: #00875f;
+    --blue: #81d8f7;
+    --warning: #fba94c;
+
+    --background: #09090a;
+    --gray2: #121214;
+    --gray3: #323238;
+    --text: #e1e1e6;
+    --text-supporting: #8d8d99;
+    --gray5: #c4c4cc;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+
+.container {
+    position: relative;
+
+    width: 100%;
+    height: auto;
+
+    background-image: url('./assets/blur_background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 10;
+}
+
+.container > img.reactImage {
+    position: absolute;
+    top: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 100%;
+
+    margin: 0 auto;
+    height: auto;
+    z-index: -1;
+}
+
+header svg {
+    width: 20.8rem;
+    height: 2.9rem;
+
+    margin-top: 6.7rem;
+    margin-bottom: 2.4rem;
+}
+
+header h1 {
+    color: var(--text);
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+    padding-inline: 2.4rem;
+}
+
+header h1 > strong {
+    color: var(--blue);
+}
+
+header p {
+    color: var(--gray5);
+    font-size: 1.4rem;
+    margin-bottom: 4.6rem;
+    justify-content: center;
+    padding-inline: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    background-color: var(--gray3);
+
+    width: min(36rem, 100%);
+    padding: 3.2rem 2.4rem;
+    margin: 0 auto;
+}
+
+form p {
+    color: var(--text);
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: left;
+
+    margin-bottom: 2.9rem;
+}
+
+form input,
+form button {
+    height: 5.6rem;
+}
+
+form input {
+    color: var(--text-supporting);
+    font-size: 1.6rem;
+    text-align: left;
+
+    padding: 1.9rem 2rem;
+    border-radius: 0.5rem;
+    border: none;
+
+    background-color: var(--background);
+}
+
+form button {
+    padding: 1.6rem 2.4rem;
+    margin-top: 1.6rem;
+
+    border-radius: 0.4rem;
+    border: none;
+
+    background-color: var(--green);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.4rem;
+}
+
+footer svg{
+    margin-bottom: 1rem;
+}
+
+footer p {
+    font-size: 1.4rem;
+    color: var(--text-supporting);
+}
